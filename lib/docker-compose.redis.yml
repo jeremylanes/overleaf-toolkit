@@ -6,7 +6,7 @@ services:
         image: "${REDIS_IMAGE}"
         volumes:
             - "${REDIS_DATA_PATH}:/data"
-        container_name: redis
+        container_name: redis-overleaf
         command: ${REDIS_COMMAND}
         expose:
             - 6379
